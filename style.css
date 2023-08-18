@@ -1,0 +1,15 @@
+#btn {
+  display: flex;
+}
+#play,
+#stop {
+  margin: 1% 1% 1% 1%;
+  padding: 0.1% 1%;
+  text-align: center;
+  background: cyan;
+}
+#play:hover,
+#stop:hover {
+  font-weight: bold;
+  background: yellow;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - tone.js-15</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://html-generator.glitch.me/index.js"></script>
+<script src="https://unpkg.com/hydra-synth"></script>
+<script>
+  composeElement("body", 0, "h1", "id", "title", "color:black;", "E-Xylophone Apps");
+  composeElement("body", 0, "strong", "id", "caption", "color:black", "1 Octave");
+  composeElement("body", 0, "ul", "id", "piano", "width:100%; position:relative;", "");
+  for (let i = 3; i <= 15; i++) {
+    composeElement("ul", 0, "li", "id", `${i}`, "list-style-type:none;display:inline-block;background-color:white;color:black;font-size:30px;font-weight:bold;width:5%;height:240px;display:inline-block;border:1px solid #000;text-align:center;", `${i+57}`);
+    if (i == 3 && i == 5 && i == 7 && i == 8 && i == 10 && i == 12 && i == 14 && i == 15) {
+      composeElement("ul", 0, "li", "id", `${i}`, "list-style-type:none;display:inline-block;background-color:black;color:white;font-size:30px;font-weight:bold;width: 5%;height:140px;display:inline-block;margin-left:-5%;background-color:#000;position:absolute;top:0;z-index:1;text-align:center;", `${i+57}`);
+    }
+  }
+</script>
+<strong>loop:</strong>
+<input type="number" value="4" id="loop" />
+<br><strong>beat(not changed):</strong>
+<input type="number" value="8" id="beat" />
+<br><strong>tempo:</strong>
+<input type="number" value="120" id="tempo" />
+<br><strong>note:</strong>
+<input type="number" value="1" id="note" />
+<div id="btn">
+  <div id="play">Play</div>
+  <div id="stop">Stop</div>
+</div>
+<canvas id="myCanvas" width="1300px" height="400px"></canvas>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tone/13.1.25/Tone.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
