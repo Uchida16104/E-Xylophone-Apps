@@ -16,4 +16,4 @@ I developed this based on [Tone.js](https://tonejs.github.io/) and [hydra](https
 * on 19th, Aug, 2023.
 * Update README.
 ### Copyright
-* by Hirotoshi Uchida
+* by Hirotoshi Uchida.
